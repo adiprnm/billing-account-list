@@ -163,7 +163,7 @@
       }
 
       search({ target }) {
-        let accounts = this.getAccounts().filter(acc => acc.name.toLowerCase().includes(target.value))
+        let accounts = this.getAccounts().filter(acc => acc.name.toLowerCase().includes(target.value.toLowerCase()))
 
         this.render(accounts)
       }
